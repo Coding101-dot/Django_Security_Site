@@ -1,0 +1,81 @@
+<!DOCTYPE>
+{% load static %}
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Good practices</title>
+
+
+      <style>
+          body {
+                background-color: #faf2e4;
+                margin: 0 10px;
+                font-family: fantasy;
+                font-size: large;
+                background-image: url(images/bearz.png), url(images/multi1.png), url(images/multi2.png), url(images/brain.png);
+                background-repeat: no-repeat;
+                background-position: center 432px, center 749, center 850, right 895;
+                }
+          h1 {
+             font-family: fantasy;
+             font-weight: normal;
+             text-align: center;
+             text-transform: uppercase;
+             text-shadow:-.2em -.2em silver;
+             border-bottom: 1px solid #57b1dc;
+             color: #d1633c;
+             }
+          a {
+              display: block;
+              min-width: 100px; height: 50px; text-align: center;
+              line-height: 50px; font-family: "Helvetica Neue",
+              Helvetica, Arial, sans-serif; color: #fff; background: #2f3036;
+              text-decoration: none; max-width: 400px;
+            }
+          a:hover{
+                  color: red;}
+      </style>
+  </head>
+
+  <body>
+
+  <h1><img src="{% static 'Desktop_Security/images/sss.png' %}" alt='' style="max-width:100%;height:auto;"><br>General practices to stay safe</h1>
+  <p><a href="{% url 'index' %}">Home</a></p>
+
+
+  <h2><u>Social Media<img src="{% static 'Desktop_Security/images/Social.png' %}" style="max-width:100%;height:auto;"></u></h2>
+  <p style="border:1px solid red">To be honest a lot of people reveal way too much info about themselves on social media platforms.For instance home
+     address, email addresses and phone numbers. These can all be extracted by automatic programs and are often sold to companies
+     or others with ill intentions.Then they use this information to send you spam mail or give you calls to sell products
+     and in other cases even used for illegal activity.So try to minimize this info you put out there. Why do people need to know
+     where you stay or what your phone number is if it's not a close friend or work colleague.Same with email addresses
+     Don't just paste them anywhere.Understandably you do need to register on sites for some services occasionally, Just be
+     sure the site is legit and if you want to be extra careful use a service like Guerrilla Mail which is a temporary email
+     service.</p>
+
+  <h2><u>Downloads<img src="{% static 'Desktop_Security/images/Download.png' %}" style="max-width:100%;height:auto;"></u></h2>
+  <p style="border:1px solid red">Downloads along with emails are the main source of virus acquisition be sure to download programs with certificates that
+     your browser trusts, Some legitimate programs do have certification problems and are still valid programs.When downloading these
+     just be sure to have your antivirus scan the program before downloading.</p>
+
+  <h2><u>Visiting sites<img src="{% static 'Desktop_Security/images/Sites.png' %}" style="max-width:100%;height:auto;"></u></h2>
+  <p style="border:1px solid red">When visiting websites certain precautions should be taken to ensure your safety and the safety of your personal details
+     on the site...Here are a few things to look out for.In your search bar where the address is displayed check for the 'S'
+     in https, The 'S' is short for secure and without it any data entered into forms is up for grabs by unwanted parties!
+     Also if there's a privacy policy somewhere that's also a good sign.There should also be a little lock on the far left
+     of your search bar.And then the pop ups...Don't click on pop ups stating that you have won something or anything trying to
+     entice you to leave the particular site.</p>
+
+  <h2><u>Emails<img src="{% static 'Desktop_Security/images/email.png' %}" style="max-width:100%;height:auto;"></u></h2>
+  <p style="border:1px solid red">Do not open attachments on emails from people/entities you don't know.Especially if the attachment is media related
+     or the content seems to lure you to open the attachment.A virus is quickly transferred to your home pc or business
+     with an attachment like this.So just be careful.Your antivirus should scan incoming emails though.But it's still a
+     very real threat.</p>
+
+  <h2><u>Passwords<img src="{% static 'Desktop_Security/images/Chest.png' %}" style="max-width:100%;height:auto;"></u></h2>
+  <p style="border:1px solid red">In terms of passwords, use something more than 10 characters long, be sure to use upper and lower case.Include a digit
+     or two...preferably not 69.But that is an awesome password though.Also include some symbols if allowed and that is it.
+     That's a pretty secure password that's not easily cracked</p>
+
+  </body>

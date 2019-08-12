@@ -1,0 +1,104 @@
+<!DOCTYPE >
+{% load static %}
+<html>
+  <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Secured@home</title>
+
+      <style>
+          body {
+               background-color: #faf2e4;
+               margin: 0 10%;
+               font-family:fantasy;
+               font-size: large;
+               background-image: url(images/skunk.png);
+               background-repeat: no-repeat;
+               background-position: center 670px;
+               }
+          h1 {
+              font-family: fantasy;
+              font-weight: normal;
+              text-align: center;
+              text-transform: uppercase;
+              text-shadow: -.2em -.2em silver;
+              border-bottom: 1px solid #57b1dc;
+
+              }
+          h2 {
+              color: #d1633c;
+              }
+          footer {
+                  border-top: 1px solid #57b1dc;
+                  text-align: center;
+                  padding-top: 1em;
+                  }
+
+          footer img {
+                      width: 40px;
+                      height: 40px;
+                      margin-left: .5em;
+                      margin-right: .5em;
+                      }
+          nav a {
+              display: block;
+              min-width: 100px; height: 50px; text-align: center;
+              line-height: 50px; font-family: "Helvetica Neue",
+              Helvetica, Arial, sans-serif; color: #fff; background: #2f3036;
+              text-decoration: none; max-width: 400px; margin-left: 300px;
+            }
+          nav a:hover {
+                       color: red;
+                       }
+
+
+
+      </style>
+
+  </head>
+
+  <body>
+
+  <h1><img src="{% static 'Desktop_Security/images/22819.PNG' %}" alt=""  style="max-width:100%;height:auto;"><br>SECURED@HOME</h1>
+
+  <header>
+      <nav>
+          <a href="{% url 'software' %}">Software Requirements</a>
+          <a href="{% url 'settings' %}">Settings To change</a>
+          <a href="{% url 'practices' %}">Good habits</a>
+          <a href="{% url 'malware' %}">What's out there</a>
+      </nav>
+  </header>
+
+  <h2 style="text-shadow:-.2em -.2em silver"><u>Home Desktop protection<img src="{% static 'Desktop_Security/images/protection.png' %}" style="max-width:100%;height:auto;"></u></h2>
+
+
+  <p style="border:1px solid gold">This is a site that details how you can secure your desktop device or laptop at home by changing some settings.
+     It also provides a list of guidelines to follow or practices to keep, In order to keep you safe from any unwanted
+     intrusion.You can never be too careful these days when it comes to privacy.There are always people out there looking
+     how they can scam/con you out of your hard earned cash.With this site I merely attempt to give you some base knowledge
+     on how you can make that so much more difficult for people to achieve with a few clicks of your mouse.Plus it won't
+     cost you a sent.</p>
+
+  <p style="border:1px solid gold">It also lists what type of attacks to look out for and I provide some links and advice to software that you
+     can use.<u><em>All free to download</em></u>.And it includes a section on how to keep your mobile device secure from Malware
+     and other things such as Spyware but more is explained in the 'What's out there' section of this page.These are the top
+     free products out there.</p>
+
+  </body>
+
+  <footer>
+      <p><small>Created by: Henk Labuschagne</small></p>
+      <p><small>Please visit some of my other sites if you'd like to learn how to program.</small></p>
+      <a  href="https://www.youtube.com/channel/UCnb54nd3iFGORQwRuquEzOA?view_as=subscriber"><img src="{% static 'Desktop_Security/icons/youtube.png' %}" alt="ss"></a>
+      <a href="https://github.com/Coding101-dot?tab=repositories"><img src="{% static 'Desktop_Security/icons/github.png' %}" alt="se"></a>
+      <a href="https://wordpress.com/view/techstudents1.wordpress.com"><img src="{% static 'Desktop_Security/icons/wordpress.png' %}" alt="so"></a>
+
+  </footer>
+
+
+
+</html>
+
+

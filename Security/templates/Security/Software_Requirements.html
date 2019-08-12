@@ -1,0 +1,86 @@
+<!DOCTYPE>
+{% load static %}
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Software Requirements</title>
+
+
+      <style>
+          body {
+                background-color: #faf2e4;
+                margin: 0 10px;
+                font-family: fantasy;
+                font-size: large;
+                background-image: url(images/multi3.png), url(images/multi4.png), url(images/multi5.png), url(images/multi6.png), url(images/soul.png);
+                background-repeat: no-repeat;
+                background-position: right 590px, center 880, center 1189, center 2080, right 1550;
+                }
+          h1{
+             font-family: fantasy;
+             font-weight: normal;
+             text-align: center;
+             text-transform: uppercase;
+             text-shadow: -.2em -.2em silver;
+             border-bottom: 1px solid #57b1dc;
+             color: #d1633c;
+             }
+
+          nav a {
+              display: block;
+              min-width: 100px; height: 50px; text-align: center;
+              line-height: 50px; font-family: "Helvetica Neue",
+              Helvetica, Arial, sans-serif; color: #fff; background: #2f3036;
+              text-decoration: none; max-width: 400px; margin-left: 420px;
+            }
+          nav a:hover{
+                  color: red;}
+          p {
+              background: #f2f5d5;
+              width: 300px;
+              height: 100px;
+              padding: 20px;
+              border: 5px solid gray;
+              margin: 20px;
+                 }
+      </style>
+  </head>
+  <body>
+  <h1><u><img src="{% static 'Desktop_Security/images/tcz2.png' %}" alt="" style="max-width:100%;height:auto;"> <br> Software requirements</u></h1>
+  <nav>
+     <p1><a href="{% url 'index' %}">Home</a></p1>
+  </nav>
+      <p1 style="border: 1px solid gold;">Here I include all the necessary Software to keep you protected.I'm not going to include lengthy descriptions
+         documentation with in-depth descriptions are available on the Sites themselves.But You can trust me.Click on the
+         image to head over to the site.</p1>
+      <hr>
+
+     <h2><u>Antivirus</u></h2>
+      <p>Good free antivirus that covers most areas(Malware, spyware, viruses) is TotalAv.</p>
+      <a href="https://www.totalav.com/en/free-antivirus"><img src="{% static 'Desktop_Security/images/virus (1).png' %}" style="max-width:100%;height:auto;"></a>
+      <hr>
+     <h2><u>SUMo</u></h2>
+      <p>Use this to automatically update and patch software.</p>
+      <a href="https://www.kcsoftwares.com/?download"><img src="{% static 'Desktop_Security/images/virus (3).png' %}" style="max-width:100%;height:auto;"></a>
+      <hr>
+     <h2><u>Nitrokey</u></h2>
+      <p>Use this to store files, emails and data physically.This device however needs to be purchased.</p>
+      <a href="https://www.nitrokey.com/"><img src="{% static 'Desktop_Security/images/virus (5).png' %}"  style="max-width:100%;height:auto;"></a>
+      <hr>
+     <h2><u>Firefox</u></h2>
+      <p>Out of all the browsers Firefox is the most secure.</p>
+      <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="{% static 'Desktop_Security/images/fox.png' %}" style="max-width:100%;height:auto;"></a>
+      <hr>
+     <h2><u>CPU-ZED</u></h2>
+      <p>You can use this to monitor your CPU and other system information.</p>
+      <a href="https://www.cpuid.com/softwares/cpu-z.html"><img src="{% static 'Desktop_Security/images/virus (4).png' %}" style="max-width:100%;height:auto;"></a>
+      <hr>
+     <h2><u>Personal firewall</u></h2>
+      <p>You can download a personal firewall to add extra security.Windows does provide you with one but why not add an extra layer.</p>
+      <a href="https://www.zonealarm.com/software/free-firewall/"><img src="{% static 'Desktop_Security/images/virus (2).png' %}" style="max-width:100%;height:auto;"></a>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE>
+{% load static %}
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Software Requirements</title>
+
+
+      <style>
+          body {
+                background-color: #faf2e4;
+                margin: 0 10px;
+                font-family: fantasy;
+                font-size: large;
+                }
+          p3{
+             text-align: center;}
+          h1{
+             font-family: fantasy
+             font-weight: normal;
+             text-align: center;
+             text-shadow:-.2em -.2em silver;
+             text-transform: uppercase;
+             border-bottom: 1px solid #57b1dc;
+             color: #d1633c;
+             }
+          img{
+             img-align:center;
+             }
+          a {
+              display: block;
+              min-width: 100px; height: 50px; text-align: center;
+              line-height: 50px; font-family: "Helvetica Neue",
+              Helvetica, Arial, sans-serif; color: #fff; background: #2f3036;
+              text-decoration: none; max-width: 400px; margin-left: 420px;
+            }
+          a:hover{
+                  color: red;}
+          p {
+              background: #f2f5d5;
+              width: 350px;
+              height: 170px;
+              padding: 20px;
+              border: 5px solid gray;
+              margin: 20px;
+                 }
+      </style>
+  </head>
+
+  <body>
+  <h1><u><img src="{% static 'Desktop_Security/images/batman.png' %}" alt="" style="max-width:100%;height:auto;"> <br> Settings to change on Desktop</u></h1>
+    <p1><a href="{% url 'index' %}">Home</a></p1>
+        <h2 style="border:1px solid gold">Here are some classes of settings that you can change on your desktop.Some apps like maps will need to use these
+            settings...But it is safer to have it in the off position and if a certain app really needs to use it, It will
+            inform you of it.But in my case that's never happened.</h2>
+
+  <h3><u>Privacy settings<img src="{% static 'Desktop_Security/images/privacy66.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>From your desktop view after startup click on start/Windows icon and then on the settings tab then click
+           on Privacy from there change your settings to the examples. I will provide short descriptions as to why.
+           Most are self explanatory.</p>
+
+        <h3><u>General<img src="{% static 'Desktop_Security/images/general.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <img src="images/privacy0.png" alt="">
+        <img src="images/privacy1.png" alt="">
+
+        <hr>
+        <h3><u>Camera<img src="{% static 'Desktop_Security/images/cam.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>Switch off the Camera, Unless you are actively using it.There are people out there that know how to access it.
+           plus some apps you download you actually unknowingly give permission to access your device camera.Meaning they can look
+           through it whenever they please.</p>
+        <img src="images/privacy2..png" alt="">
+
+        <hr>
+        <h3><u>Location<img src="{% static 'Desktop_Security/images/bear.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>So deactivating this tab will allow you to hide your location from any unwanted 'visitors',This is a safe thing
+           to do. Why would you want potential strangers or companies to know your exact location within a few meters.
+           off with the switch!</p>
+        <img src="images/privacy3.png" alt="">
+
+        <hr>
+        <h3><u>Microphone<img src="{% static 'Desktop_Security/images/bat.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>The microphone.If you are not using it for voice searches or maybe skype then switch iit off.There are people that
+           know how to listen in on your personal conversations.</p>
+        <img src="images/privacy4.png" alt="">
+
+        <hr>
+        <h3><u>Account info<img src="{% static 'Desktop_Security/images/atck.png' %}"style="max-width:100%;height:auto;"></u></h3>
+        <p>Switch it off.Why would someone want that info from you.The less they know about you the better.</p>
+        <img src="images/privacy5.png" alt="">
+
+        <hr>
+        <h3><u>Contacts<img src="{% static 'Desktop_Security/images/skull.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>Your contacts are YOUR contacts.No one elses..Shut it down.</p>
+        <img src="images/privacy6.png" alt="">
+
+        <hr>
+        <h3><u>Calender<img src="{% static 'Desktop_Security/images/2.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>Want complete strangers to know your birthday or any potential meetings or events you have set up? NO.Switch it off</p>
+        <img src="images/privacy7.png" alt="">
+
+        <hr>
+        <h3><u>Messaging<img src="{% static 'Desktop_Security/images/rabbit.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>Leave our messages alone.Off.</p>
+        <img src="images/privacy8.png" alt="">
+        <hr>
+
+        <h3><u>Radios<img src="{% static 'Desktop_Security/images/radio.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>Switch it to the OFF position.</p>
+        <img src="images/privacy9.png" alt="">
+
+        <h3><u>Wifi-sense<img src="{% static 'Desktop_Security/images/jelly.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>This feature can actually be used to share your password on other networks switch it off like this, From WiFi
+           go to manage WiFi settings</p>
+        <img src="images/privacy10.png" alt="">
+        <img src="images/privacy11.png" alt="">
+
+        <h3><u>Windows media player<img src= "{% static 'Desktop_Security/images/zom.png' %}"style="max-width:100%;height:auto;"></u></h3>
+        <p>Copy the settings below, They are pretty self explanatory</p>
+        <img src="images/privacy13.png" alt="">
+
+        <h3><u>Patching<img src="{% static 'Desktop_Security/images/3.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>This is the single most important feature.Keep your security up to date as there is a constant evolving of new malicious
+            Software being developed.Head over to the <u>Software requirements</u></a2> page to
+            see how you can automate this process</p>
+
+        <h3><u>Users<img src="{% static 'Desktop_Security/images/users.png' %}" style="max-width:100%;height:auto;"></u></h3>
+        <p>It is good practice to run your system on a different account than the administrator account. If someone were to gain
+           access to your system, this would severely limit the damage they can cause as they will only be able to perform actions under
+           the standard user. So add a standard user account and work with that.</p>
+           <img src="{% static 'Desktop_Security/images/privacy12.png' %}" alt="">
+
+        <p1><a href="Settings_changes.html">Top</a></p1>
+
+  </body>
